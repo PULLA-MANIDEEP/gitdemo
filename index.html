@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: aqua;
+        height: 300px;
+        width: 90%;
+        position: relative;
+    }
+    .ball{
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        position:absolute;
+        bottom: 0%;
+        left: 0%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: Xani 5s linear infinite , Yani 1s ease-out infinite alternate;
+        
+    }
+    @keyframes Xani {
+        from{
+            left: 0%;
+
+        }
+        to{
+            left: 100%;
+            
+        }
+        
+    }
+    @keyframes Yani {
+        from{
+          bottom: 0%;
+
+        }
+        to{
+            bottom: 100%;
+        }
+        
+    }
+    
+    
+        
+       
+</style>
+<body>
+    <div class="container">
+        <div class="ball">
+            <p>ball</p>
+        </div>
+    </div>
+</body>
+</html>
